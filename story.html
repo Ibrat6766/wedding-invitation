@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Story — Isabella &amp; Alexander</title>
+  <meta name="description" content="The love story of Isabella Rossi and Alexander Hartwell, from their first meeting to their engagement.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+
+  <!-- Story page: extra spacing for pull quote -->
+  <style>
+    .pull-quote {
+      max-width: 720px;
+      margin: 0 auto 7rem;
+      padding: 4rem;
+      text-align: center;
+      position: relative;
+    }
+    .pull-quote::before, .pull-quote::after {
+      content: '"';
+      font-family: var(--font-script);
+      font-size: 8rem;
+      color: var(--gold-pale);
+      position: absolute;
+      line-height: 1;
+    }
+    .pull-quote::before { top: 0; left: 1rem; }
+    .pull-quote::after  { content: '"'; bottom: -2rem; right: 1rem; }
+    .pull-quote blockquote {
+      font-family: var(--font-serif);
+      font-size: clamp(1.2rem, 2.5vw, 1.7rem);
+      font-weight: 300;
+      font-style: italic;
+      color: var(--charcoal);
+      line-height: 1.7;
+      position: relative;
+      z-index: 1;
+    }
+    .pull-quote cite {
+      display: block;
+      margin-top: 1.5rem;
+      font-family: var(--font-sans);
+      font-size: 0.68rem;
+      font-style: normal;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--gold);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">I &amp; A</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="event.html">The Event</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="event.html">The Event</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="rsvp.html">RSVP</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header" aria-label="Our Story header">
+      <div class="page-header-bg"
+           style="background-image:url('https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=1600&q=75');"
+           role="img" aria-label="Romantic background"></div>
+      <div class="page-header-content">
+        <p class="eyebrow">How It All Began</p>
+        <h1>Our Story</h1>
+      </div>
+    </header>
+
+    <!-- PULL QUOTE -->
+    <section style="padding:7rem 2rem 0;" aria-label="Love quote">
+      <div class="pull-quote reveal">
+        <blockquote>
+          "I knew, the moment I saw her standing in front of that Monet, laughing at something I hadn't said yet — I knew she was the one."
+        </blockquote>
+        <cite>— Alexander</cite>
+      </div>
+    </section>
+
+    <!-- TIMELINE -->
+    <section style="padding:2rem 4rem 8rem;" aria-label="Our story timeline">
+      <div style="text-align:center;margin-bottom:5rem;" class="reveal">
+        <span class="section-eyebrow">The Journey</span>
+        <h2 class="section-title">Milestones of Our Love</h2>
+        <span class="gold-line"></span>
+      </div>
+
+      <div class="timeline">
+
+        <!-- ── Chapter 1 ── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-text">
+            <p class="year">Spring 2019</p>
+            <h3>The First Meeting</h3>
+            <p>Florence, Italy. A spring exhibition at Galleria dell'Accademia. Isabella was laughing at a painting's placard — Alexander was three steps behind, reading the same sign. He asked if he was missing something. She said everything. They talked for three hours.</p>
+          </div>
+          <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+          <div class="timeline-img">
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=75"
+                 alt="Florence gallery" loading="lazy">
+          </div>
+        </div>
+
+        <!-- ── Chapter 2 ── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-text">
+            <p class="year">Summer 2019</p>
+            <h3>First Date Under the Stars</h3>
+            <p>A rooftop dinner in Rome, late June, when the city glows gold at dusk. Over wine and pasta, they discovered matching tastes in music, contradictory opinions on dessert, and an identical scar from childhood bicycles. Three hours turned to midnight.</p>
+          </div>
+          <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+          <div class="timeline-img">
+            <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=75"
+                 alt="Rome rooftop at dusk" loading="lazy">
+          </div>
+        </div>
+
+        <!-- ── Chapter 3 ── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-text">
+            <p class="year">Winter 2020</p>
+            <h3>Through Harder Times</h3>
+            <p>The world slowed down, but their love grew faster. Shared balconies became their theatre, video calls their stage. Distance taught them that home isn't a place — it's a person. Alexander moved to Milan by autumn.</p>
+          </div>
+          <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+          <div class="timeline-img">
+            <img src="https://images.unsplash.com/photo-1522673607200-164d1b6ce486?w=600&q=75"
+                 alt="Cozy indoor moment" loading="lazy">
+          </div>
+        </div>
+
+        <!-- ── Chapter 4 ── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-text">
+            <p class="year">Autumn 2022</p>
+            <h3>Adventures Together</h3>
+            <p>Two years of travelling — Santorini cliffs, Lisbon alleyways, Tokyo dawn markets. Each city taught them something new about the other, and every sunset felt like the best one yet. They were building a world of two.</p>
+          </div>
+          <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+          <div class="timeline-img">
+            <img src="https://images.unsplash.com/photo-1530538987395-032d1800fdd4?w=600&q=75"
+                 alt="Santorini sunset travel" loading="lazy">
+          </div>
+        </div>
+
+        <!-- ── Chapter 5 ── -->
+        <div class="timeline-item reveal">
+          <div class="timeline-text">
+            <p class="year">June 2024</p>
+            <h3>He Asked. She Said Yes.</h3>
+            <p>Lake Como, the exact terrace where they had their third anniversary dinner. At sunset, with the water turned amber and the mountains silhouetted, Alexander knelt down. Isabella was already crying before he said a word. The answer was always yes.</p>
+          </div>
+          <div class="timeline-dot"><div class="timeline-dot-inner"></div></div>
+          <div class="timeline-img">
+            <img src="https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=600&q=75"
+                 alt="Engagement at Lake Como" loading="lazy">
+          </div>
+        </div>
+
+      </div><!-- /timeline -->
+    </section>
+
+    <!-- CTA BAND -->
+    <section style="background:var(--obsidian);padding:6rem 2rem;text-align:center;" aria-label="Next steps CTA">
+      <div class="reveal">
+        <span class="section-eyebrow" style="color:var(--gold-light)">Chapter Six</span>
+        <h2 class="section-title" style="color:var(--warm-white);font-style:italic;">Now, the Wedding</h2>
+        <span class="gold-line"></span>
+        <p class="section-subtitle" style="color:var(--stone-light)">Join us as we write the next chapter together.</p>
+        <a href="rsvp.html" class="btn"><span>Confirm Your Attendance</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-names">Isabella &amp; Alexander</p>
+    <p class="footer-date">September 20, 2025 &nbsp;·&nbsp; Lake Como, Italy</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="story.html">Our Story</a>
+      <a href="event.html">The Event</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="rsvp.html">RSVP</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">Made with love &nbsp;·&nbsp; &copy; 2025 Isabella &amp; Alexander</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

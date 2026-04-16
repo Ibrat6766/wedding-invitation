@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isabella & Alexander — September 20, 2025</title>
+  <meta name="description" content="Join us to celebrate the wedding of Isabella Rossi and Alexander Hartwell on September 20, 2025 at Villa Bellagio, Lake Como.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+</head>
+<body>
+
+  <!-- ══════════════════════════════════════════════════════
+       NAVIGATION
+  ══════════════════════════════════════════════════════ -->
+  <nav class="nav nav-dark" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">I &amp; A</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="event.html">The Event</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+
+  <!-- Mobile overlay menu -->
+  <nav class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="event.html">The Event</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="rsvp.html">RSVP</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════
+         HERO SECTION
+    ══════════════════════════════════════════════════ -->
+    <section class="hero" aria-label="Hero section">
+      <div class="hero-bg" role="img" aria-label="Wedding flowers background"></div>
+      <div class="hero-overlay"></div>
+
+      <div class="hero-content">
+        <p class="hero-eyebrow">We Are Getting Married</p>
+        <h1 class="hero-names">
+          Isabella
+          <span class="hero-ampersand">&amp;</span>
+          Alexander
+        </h1>
+
+        <div class="hero-divider" aria-hidden="true">
+          <span class="hero-divider-line"></span>
+          <span class="hero-divider-diamond"></span>
+          <span class="hero-divider-line"></span>
+        </div>
+
+        <p class="hero-date">Saturday, the Twentieth of September, Two Thousand and Twenty-Five</p>
+        <p class="hero-location">Villa Bellagio · Lake Como, Italy</p>
+
+        <div class="hero-cta">
+          <a href="rsvp.html" class="btn"><span>Kindly RSVP</span></a>
+          &nbsp;&nbsp;
+          <a href="event.html" class="btn btn-solid"><span>View Details</span></a>
+        </div>
+      </div>
+
+      <!-- Scroll cue -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <div class="scroll-indicator-line"></div>
+        <span>Scroll</span>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         INTRO QUOTE
+    ══════════════════════════════════════════════════ -->
+    <section class="home-intro" aria-label="Wedding intro">
+      <div class="reveal">
+        <div class="ornament"><span>✦</span></div>
+        <p class="couple-script">Ibratbek &amp; Kim</p>
+        <p>"Two souls, one heart — and a lifetime of adventures ahead.<br>
+        We invite you to be part of the moment our forever begins."</p>
+        <div class="ornament" style="margin-top:2.5rem;"><span>✦</span></div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         DETAILS STRIP
+    ══════════════════════════════════════════════════ -->
+    <div class="home-details-strip" aria-label="Event quick details">
+      <div class="home-details-grid">
+        <div class="detail-card reveal">
+          <div class="detail-card-icon">◇</div>
+          <p class="detail-card-label">The Date</p>
+          <p class="detail-card-value">September 20, 2025</p>
+        </div>
+        <div class="detail-card reveal reveal-delay-2">
+          <div class="detail-card-icon">◇</div>
+          <p class="detail-card-label">The Venue</p>
+          <p class="detail-card-value">Villa Bellagio, Lake Como</p>
+        </div>
+        <div class="detail-card reveal reveal-delay-4">
+          <div class="detail-card-icon">◇</div>
+          <p class="detail-card-label">Dress Code</p>
+          <p class="detail-card-value">Black Tie / Formal</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         COUNTDOWN
+    ══════════════════════════════════════════════════ -->
+    <section class="countdown-section" aria-label="Countdown to the wedding">
+      <div class="reveal">
+        <span class="section-eyebrow">Counting Down</span>
+        <h2 class="section-title">The Big Day Is Almost Here</h2>
+        <span class="gold-line"></span>
+      </div>
+      <div class="countdown-grid reveal reveal-delay-2">
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-days">00</span>
+          <span class="countdown-label">Days</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-hours">00</span>
+          <span class="countdown-label">Hours</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-minutes">00</span>
+          <span class="countdown-label">Minutes</span>
+        </div>
+        <div class="countdown-unit">
+          <span class="countdown-number" id="cd-seconds">00</span>
+          <span class="countdown-label">Seconds</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         FEATURE SPLIT — OUR STORY
+    ══════════════════════════════════════════════════ -->
+    <div class="home-feature">
+      <div class="home-feature-img reveal">
+        <img src="https://images.unsplash.com/photo-1606216794079-73c98ca9c37d?w=900&q=80"
+             alt="Couple in soft light" loading="lazy">
+      </div>
+      <div class="home-feature-text reveal reveal-delay-2">
+        <span class="section-eyebrow">Our Story</span>
+        <h2 class="section-title">A Love That<br><em>Blossomed Slowly</em></h2>
+        <p>From a chance meeting at a Florentine gallery to quiet mornings in each other's company — our story is written in stolen glances, shared laughter, and an unwavering certainty.</p>
+        <a href="story.html" class="btn btn-dark"><span>Read Our Story</span></a>
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         FEATURE SPLIT — THE EVENT
+    ══════════════════════════════════════════════════ -->
+    <div class="home-feature">
+      <div class="home-feature-text right reveal">
+        <span class="section-eyebrow" style="color:var(--gold-light)">The Celebration</span>
+        <h2 class="section-title">An Evening at<br><em>Villa Bellagio</em></h2>
+        <p>Set against the shimmering waters of Lake Como, our wedding will unfold across a candlelit terrace, beneath the Italian stars.</p>
+        <a href="event.html" class="btn"><span>Event Details</span></a>
+      </div>
+      <div class="home-feature-img reveal reveal-delay-2">
+        <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=900&q=80"
+             alt="Elegant wedding venue" loading="lazy">
+      </div>
+    </div>
+
+    <!-- ══════════════════════════════════════════════════
+         RSVP CTA BANNER
+    ══════════════════════════════════════════════════ -->
+    <section style="background:var(--champagne);text-align:center;padding:7rem 2rem;" aria-label="RSVP call to action">
+      <div class="reveal">
+        <span class="section-eyebrow">You Are Invited</span>
+        <h2 class="section-title" style="font-style:italic;">Will You Join Us?</h2>
+        <span class="gold-line"></span>
+        <p class="section-subtitle">Please kindly respond by August 1st, 2025. We look forward to celebrating with you.</p>
+        <a href="rsvp.html" class="btn btn-solid"><span>RSVP Now</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════════════════ -->
+  <footer>
+    <p class="footer-names">Isabella &amp; Alexander</p>
+    <p class="footer-date">September 20, 2025 &nbsp;·&nbsp; Lake Como, Italy</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="story.html">Our Story</a>
+      <a href="event.html">The Event</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="rsvp.html">RSVP</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">Made with love &nbsp;·&nbsp; &copy; 2025 Isabella &amp; Alexander</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

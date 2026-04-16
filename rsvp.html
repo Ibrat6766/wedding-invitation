@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RSVP — Isabella &amp; Alexander</title>
+  <meta name="description" content="RSVP to Isabella and Alexander's wedding on September 20, 2025 at Villa Bellagio, Lake Como.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">I &amp; A</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="event.html">The Event</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="event.html">The Event</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="rsvp.html">RSVP</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- ══════════════════════════════════════════════════
+         RSVP SPLIT LAYOUT
+    ══════════════════════════════════════════════════ -->
+    <div class="rsvp-layout" style="padding-top:var(--nav-h);">
+
+      <!-- SIDEBAR -->
+      <aside class="rsvp-sidebar" aria-label="RSVP invitation details">
+        <div class="rsvp-sidebar-content">
+          <span class="section-eyebrow" style="color:var(--gold-light)">You Are Cordially Invited</span>
+          <span class="big-script">Join Us</span>
+
+          <p>We would be honoured by your presence as we exchange vows and begin our journey together as husband and wife.</p>
+
+          <div class="ornament" style="justify-content:flex-start;max-width:240px;">
+            <span style="color:var(--gold)">✦</span>
+          </div>
+
+          <div style="margin-bottom:1.8rem;">
+            <p class="rsvp-deadline">The Date
+              <strong>Saturday, September 20, 2025</strong>
+            </p>
+          </div>
+          <div style="margin-bottom:1.8rem;">
+            <p class="rsvp-deadline">The Venue
+              <strong>Villa Bellagio, Lake Como</strong>
+            </p>
+          </div>
+          <div>
+            <p class="rsvp-deadline">RSVP By
+              <strong>August 1, 2025</strong>
+            </p>
+          </div>
+        </div>
+      </aside>
+
+      <!-- FORM AREA -->
+      <div class="rsvp-form-area" aria-label="RSVP form">
+
+        <!-- The Form -->
+        <form id="rsvp-form" novalidate aria-label="Wedding RSVP form">
+          <div style="margin-bottom:3rem;">
+            <span class="section-eyebrow">Your Response</span>
+            <h2 class="section-title" style="font-size:2rem;">Kindly Reply</h2>
+            <span class="gold-line" style="margin-left:0;"></span>
+          </div>
+
+          <!-- Name row -->
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;">
+            <div class="form-group">
+              <label class="form-label" for="first-name">First Name *</label>
+              <input class="form-input" type="text" id="first-name" name="first-name"
+                     placeholder="Isabella" autocomplete="given-name" required>
+              <span class="form-error" role="alert"></span>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="last-name">Last Name *</label>
+              <input class="form-input" type="text" id="last-name" name="last-name"
+                     placeholder="Rossi" autocomplete="family-name" required>
+              <span class="form-error" role="alert"></span>
+            </div>
+          </div>
+
+          <!-- Email -->
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address *</label>
+            <input class="form-input" type="email" id="email" name="email"
+                   placeholder="your@email.com" autocomplete="email" required>
+            <span class="form-error" role="alert"></span>
+          </div>
+
+          <!-- Attendance -->
+          <div class="form-group attendance-group">
+            <span class="form-label">Will You Attend? *</span>
+            <div class="radio-group" role="radiogroup" aria-required="true">
+              <label class="radio-label">
+                <input type="radio" name="attendance" value="yes">
+                <span class="radio-custom"></span>
+                Joyfully Accept
+              </label>
+              <label class="radio-label">
+                <input type="radio" name="attendance" value="no">
+                <span class="radio-custom"></span>
+                Regretfully Decline
+              </label>
+            </div>
+            <span class="form-error" role="alert"></span>
+          </div>
+
+          <!-- Number of guests -->
+          <div class="form-group">
+            <label class="form-label" for="guests">Number of Guests (including yourself)</label>
+            <select class="form-select" id="guests" name="guests">
+              <option value="1">1 Guest</option>
+              <option value="2" selected>2 Guests</option>
+              <option value="3">3 Guests</option>
+              <option value="4">4 Guests</option>
+            </select>
+          </div>
+
+          <!-- Dietary requirements -->
+          <div class="form-group">
+            <label class="form-label" for="dietary">Dietary Requirements</label>
+            <input class="form-input" type="text" id="dietary" name="dietary"
+                   placeholder="Vegetarian, gluten-free, nut allergy…">
+          </div>
+
+          <!-- Message -->
+          <div class="form-group">
+            <label class="form-label" for="message">A Note for the Couple</label>
+            <textarea class="form-textarea" id="message" name="message"
+                      placeholder="Share your wishes, a memory, or simply say hello…"></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-solid" style="width:100%;margin-top:1rem;">
+            <span>Send My RSVP</span>
+          </button>
+
+          <p style="font-family:var(--font-sans);font-size:0.65rem;color:var(--stone);margin-top:1.5rem;text-align:center;letter-spacing:0.05em;">
+            * Required fields &nbsp;·&nbsp; Please respond by August 1, 2025
+          </p>
+        </form>
+
+        <!-- SUCCESS MESSAGE -->
+        <div id="rsvp-success" class="rsvp-success" aria-live="polite">
+          <div class="success-icon">✦</div>
+          <h2>Thank You, <span class="success-name">Dear Friend</span>!</h2>
+          <div class="ornament"><span>✦</span></div>
+          <p>Your response has been received with great joy.<br>
+          We cannot wait to celebrate with you on September 20th.</p>
+          <div style="margin-top:3rem;">
+            <a href="event.html" class="btn btn-dark"><span>View Event Details</span></a>
+          </div>
+        </div>
+
+      </div><!-- /rsvp-form-area -->
+    </div><!-- /rsvp-layout -->
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-names">Isabella &amp; Alexander</p>
+    <p class="footer-date">September 20, 2025 &nbsp;·&nbsp; Lake Como, Italy</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="story.html">Our Story</a>
+      <a href="event.html">The Event</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="rsvp.html">RSVP</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">Made with love &nbsp;·&nbsp; &copy; 2025 Isabella &amp; Alexander</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

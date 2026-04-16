@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery — Isabella &amp; Alexander</title>
+  <meta name="description" content="A visual collection of moments from Isabella and Alexander's journey together.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>💍</text></svg>">
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="nav" aria-label="Main navigation">
+    <a href="index.html" class="nav-logo">I &amp; A</a>
+    <ul class="nav-links" role="list">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="story.html">Our Story</a></li>
+      <li><a href="event.html">The Event</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="rsvp.html">RSVP</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Open menu"><span></span><span></span><span></span></button>
+  </nav>
+  <nav class="nav-mobile" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="story.html">Our Story</a>
+    <a href="event.html">The Event</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="rsvp.html">RSVP</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <main>
+
+    <!-- PAGE HEADER -->
+    <header class="page-header" aria-label="Gallery header">
+      <div class="page-header-bg"
+           style="background-image:url('https://images.unsplash.com/photo-1465495976277-4387d4b0b4c6?w=1600&q=75');"
+           role="img" aria-label="Romantic moments background"></div>
+      <div class="page-header-content">
+        <p class="eyebrow">Captured Moments</p>
+        <h1>Gallery</h1>
+      </div>
+    </header>
+
+    <!-- Gallery section header + filters -->
+    <section style="padding:5rem 4rem 2rem;text-align:center;" aria-label="Gallery controls">
+      <div class="reveal">
+        <span class="section-eyebrow">Our Photographs</span>
+        <h2 class="section-title">A Visual Diary</h2>
+        <span class="gold-line"></span>
+        <p class="section-subtitle">Moments from our journey, shared with those we love most.</p>
+      </div>
+
+      <div class="gallery-filters reveal reveal-delay-2" role="group" aria-label="Filter gallery">
+        <button class="gallery-filter-btn active" data-filter="all">All Moments</button>
+        <button class="gallery-filter-btn" data-filter="engagement">Engagement</button>
+        <button class="gallery-filter-btn" data-filter="travel">Travels</button>
+        <button class="gallery-filter-btn" data-filter="portraits">Portraits</button>
+        <button class="gallery-filter-btn" data-filter="venue">The Venue</button>
+      </div>
+    </section>
+
+    <!-- ══════════════════════════════════════════════════
+         GALLERY GRID (masonry via CSS columns)
+    ══════════════════════════════════════════════════ -->
+    <section style="padding:0 0 7rem;" aria-label="Photo gallery">
+      <div class="gallery-grid" role="list">
+
+        <div class="gallery-item" data-category="engagement" role="listitem"
+             tabindex="0" aria-label="Engagement photo 1">
+          <img src="https://images.unsplash.com/photo-1583939411023-14783179e581?w=600&q=75"
+               alt="Couple embracing at sunset" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="portraits" role="listitem"
+             tabindex="0" aria-label="Portrait photo">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?w=600&q=75"
+               alt="Bride portrait in white lace" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="travel" role="listitem"
+             tabindex="0" aria-label="Travel memory">
+          <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600&q=75"
+               alt="Scenic Italian mountains" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="venue" role="listitem"
+             tabindex="0" aria-label="Venue photo">
+          <img src="https://images.unsplash.com/photo-1591604466107-ec97de577aff?w=600&q=75"
+               alt="Villa wedding venue by the lake" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="engagement" role="listitem"
+             tabindex="0" aria-label="Engagement photo 2">
+          <img src="https://images.unsplash.com/photo-1604017011826-d3b4c23f8914?w=600&q=75"
+               alt="Engagement ring close up" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="portraits" role="listitem"
+             tabindex="0" aria-label="Couple portrait">
+          <img src="https://images.unsplash.com/photo-1606216794079-73c98ca9c37d?w=600&q=75"
+               alt="Couple walking in soft afternoon light" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="travel" role="listitem"
+             tabindex="0" aria-label="Travel memory 2">
+          <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?w=600&q=75"
+               alt="Bali temple at sunrise" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="venue" role="listitem"
+             tabindex="0" aria-label="Wedding decor">
+          <img src="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?w=600&q=75"
+               alt="Elegant floral wedding decor" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="engagement" role="listitem"
+             tabindex="0" aria-label="Engagement portrait 3">
+          <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?w=600&q=75"
+               alt="Romantic couple silhouette" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="venue" role="listitem"
+             tabindex="0" aria-label="Lake Como venue view">
+          <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf?w=600&q=75"
+               alt="Lake Como from terrace" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="portraits" role="listitem"
+             tabindex="0" aria-label="Bridal portrait">
+          <img src="https://images.unsplash.com/photo-1511795409834-ef04bbd61622?w=600&q=75"
+               alt="Elegant white wedding flowers" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+        <div class="gallery-item" data-category="travel" role="listitem"
+             tabindex="0" aria-label="Travel memory 3">
+          <img src="https://images.unsplash.com/photo-1530538987395-032d1800fdd4?w=600&q=75"
+               alt="Santorini white buildings and sea" loading="lazy">
+          <div class="gallery-overlay" aria-hidden="true">
+            <span class="gallery-overlay-icon">✦</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ══════════════════════════════════════════════════
+       LIGHTBOX
+  ══════════════════════════════════════════════════ -->
+  <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+    <button class="lightbox-close" aria-label="Close lightbox">✕</button>
+    <button class="lightbox-nav lightbox-prev" aria-label="Previous image">‹</button>
+    <div class="lightbox-img-wrap">
+      <img class="lightbox-img" src="" alt="Enlarged gallery photo">
+    </div>
+    <button class="lightbox-nav lightbox-next" aria-label="Next image">›</button>
+    <p class="lightbox-counter" aria-live="polite"></p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p class="footer-names">Isabella &amp; Alexander</p>
+    <p class="footer-date">September 20, 2025 &nbsp;·&nbsp; Lake Como, Italy</p>
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="index.html">Home</a>
+      <a href="story.html">Our Story</a>
+      <a href="event.html">The Event</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="rsvp.html">RSVP</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <p class="footer-copy">Made with love &nbsp;·&nbsp; &copy; 2025 Isabella &amp; Alexander</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
